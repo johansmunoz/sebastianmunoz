@@ -8,12 +8,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="real_state.css">
+    <link rel="stylesheet" href="real_state2.css">
+    <script src="https://kit.fontawesome.com/a7c6e95f48.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <section class="title">
-        <h1>REAL STATE IN BOGOTA</h1>
-    </section>
+    <header>
+        <h2>REAL STATE IN BOGOTA</h2>
+        <input type="checkbox" id="check">
+            <label for="check" class="show-menu">
+                &#8801
+            </label>
+        <nav class="menu">
+            <a href="#context">About Project</a>
+            <a href="#results">Some Results</a>
+            <a href="#">Conclusions</a>
+            <a href="#">Home</a>
+            <label for="check" class="hide-menu">
+                &#215
+            </label>
+        </nav>
+    </header>
     <section id="context">
         <div class="goal">
             <H2>GOALS</H2>
@@ -29,12 +43,11 @@
         </div>
     </section>
     <section id='results'>
-        <!-- <div class="plots"> -->
             <div class="title2">
                 <h2>Some Results</h2>
             </div>    
             <div class='map'>
-            <h3>Map with General Data</h3>
+                <h3>Map with General Data</h3>
                 <iframe class="map1"src="map.html"  frameborder="0">
                     </iframe>
                 <p>The previous map shows some information by zone.<br>
@@ -45,7 +58,7 @@
             </div>
 
             <div class="histogram">
-            <h3>Quantity of Properties vs Values</h3>
+                <h3>Quantity of Properties vs Values</h3>
                 <iframe class="histogram1"src="MULTIMEDIA/histogram1.html"
                     frameborder="0">
                     </iframe>
@@ -73,9 +86,15 @@
                 are located in the East Zone of the city, followed by the North Zone<br>
                 while the cheapest zone is the Southwest Zone</p>
             </div>
-
-        <!-- </div> -->
     </section>
-
+    <section id="icons">
+        <div class="content-icons">
+            <div>
+                <a href="https://www.linkedin.com/in/sebastian-munoz-fci/" target="_blank" class="go-to-linkedin">
+                    <i class="fa-brands fa-linkedin fa-2xl" style="color: #74C0FC;"></i>
+                </a>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
