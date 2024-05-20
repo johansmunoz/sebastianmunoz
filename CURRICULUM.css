@@ -1,0 +1,298 @@
+body{
+    margin:0;
+    padding: 0;
+    background: FFF8F0;
+}
+.name {
+    width: 100%;
+    height: 300px;
+    background-color: #84BCDA;
+    transform: skewY(-5deg);
+}
+.name .content{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 25%;
+    transform: skewY(5deg);
+}
+
+.name .content .myname{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 65px;
+}
+
+.name .content .age_profession{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+.name .img{
+    position: absolute;
+    top: 22%;
+    right: 15%;
+    width: 200px;
+    height: 180px;
+    border-radius: 100%;
+    transform: skew(5deg);
+    overflow: hidden;
+}
+
+.name .img img{
+width: 225px;
+height: 180px;
+align-content: left;
+}
+.father_box{
+    width: 95%;
+    height: auto;
+    margin: 2.5%;
+}
+
+.info{
+    width: 45%;
+    height: 460px;
+    background: #84BCDA;
+    margin: 5% auto;
+    padding: 15px; 
+    border-radius: 20px;
+    float: left;
+}
+
+.info .resume{
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: large;   
+    text-align: Justify;
+}
+
+.info span{
+    display:inline-block;
+    width: auto;
+    height:auto;
+    background: white;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+}
+
+.info .title_section{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bolder;
+    border-bottom: 2px white solid;
+}
+
+.info .title_info{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    font-size: large;
+    display: inline;
+    margin-right: 20px;
+}
+
+.info .subtitle_info{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: large;
+    display: inline;
+    margin-right: 20px;
+}
+
+.info .information{
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: large;
+    display: inline;
+}
+
+.info_experience{
+    width: 45%;
+    height: 460px;
+    background: #84BCDA;
+    margin: 5% auto;
+    padding: 15px; 
+    border-radius: 20px;
+    float: right;
+    /*clear: both;*/
+
+}
+
+.info_experience .title_section{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bolder;
+    border-bottom: 2px white solid;
+}
+
+.info_experience .title_info{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    font-size: large;
+    display: inline;
+    margin-right: 20px;
+}
+
+.info_experience .subtitle_info{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: large;
+    display: inline;
+    margin-right: 20px;
+}
+
+.info_experience .information{
+
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: large;
+    display: inline;
+}
+
+.info_hobbies{
+    width: 45%;
+    height: 260px;
+    background: #84BCDA;
+    margin: 5% auto;
+    padding: 15px; 
+    border-radius: 20px;
+    float: left;
+}
+
+.info_hobbies .title_section{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bolder;
+    border-bottom: 2px white solid;
+}
+
+.info_hobbies .title_info{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    font-size: large;
+    display: inline;
+    margin-right: 20px;
+}
+
+.info_hobbies .subtitle_info{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: large;
+    display: inline;
+    margin-right: 20px;
+}
+
+.info_hobbies .information{
+
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: large;
+    display: inline;
+}
+
+.info_education{
+    width: 45%;
+    height: 260px;
+    background: #84BCDA;
+    margin: 5% auto;
+    padding: 15px; 
+    border-radius: 20px;
+    float: right;
+}
+
+.info_education .title_section{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bolder;
+    border-bottom: 2px white solid;
+}
+
+.info_education .title_info{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    font-size: large;
+    display: inline;
+    margin-right: 20px;
+}
+
+.info_education .subtitle_info{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: large;
+    display: inline;
+    margin-right: 20px;
+}
+
+.info_education .information{
+
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: large;
+    display: inline;
+}
+
+.additional_education{
+    width: 45%;
+    height: 400px;
+    background: #84BCDA;
+    margin: 5% auto;
+    padding: 15px; 
+    border-radius: 20px;
+    float: right;
+}
+
+.additional_education .title_section{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bolder;
+    border-bottom: 2px white solid;
+}
+
+.additional_education .title_info{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    font-size: large;
+    display: inline;
+    margin-right: 20px;
+}
+
+.additional_education .subtitle_info{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: large;
+    display: inline;
+    margin-right: 20px;
+}
+
+.additional_education .information{
+
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: large;
+    display: inline;
+}
