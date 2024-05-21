@@ -224,6 +224,16 @@ h2{
         height: 150px;
         width: 160px;
     }
+
+    .content-about{
+    
+        align-items: center;
+    
+        /*flex-wrap: wrap;*//*INVESTIGAR*/
+        justify-content:space-around;/**/
+
+        text-align:left;
+    }
   }
   
   /* Smarphones */
@@ -245,6 +255,16 @@ h2{
 
         height: 140px;
         width: 150px;
+    }
+
+    .content-about{
+    
+        align-items: center;
+    
+        /*flex-wrap: wrap;*//*INVESTIGAR*/
+        justify-content:space-around;/**/
+
+        text-align:left;
     }
   }
 
