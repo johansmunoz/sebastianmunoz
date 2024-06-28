@@ -100,22 +100,26 @@
             </section>
             
             <!--Form Section-->
-            <!-- <section>
-                <div id="form">
-                    <form name="formulario" method="get" action="procesar.php">
-                        <p>
-                            <label>Name:</label><input type="text" name="name" maxlength="50"></label>
-                        </p>
-                        <p>
-                            <label>Email:<input type="email" name="email" maxlength="50"></label>
-                        </p>
-                        <p>
-                            <label>Request:<input type="text" name="request" maxlength="300"></label>
-                        </p>
-                        <p><input type="submit" value="Send"></p>
-                    </form>
-                </div>
-            </section> -->
+            <section>
+                <form action="https://formsubmit.co/jo-ha27@hotmail.com" method="POST">
+                    <div id="form">
+                        <h2>Contact Me</h2>
+                        <label for='name'>Name</label>
+                        <input type="text" name="name" id="name" placeholder="Name">
+                        <label for="phone">Phone</label>
+                        <input type="tel" name="phone" id="phone" placeholder="Phone Number">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Email">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="4" placeholder="Message"></textarea>
+
+                        <input class="btn" type="submit" value="Send">
+
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                    
+                    </div>
+                </form>
+            </section>
         </main>
 
         <!--BACK TO TOP BUTTON-->
