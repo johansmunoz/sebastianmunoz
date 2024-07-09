@@ -76,12 +76,13 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-left: 0px;
 }
 
 .goal h2{
     font-size: 30px;
     font-weight: 400;
-    padding: 10px 0;
+    padding: 10px 0px;
 }
 
 .data{
@@ -99,7 +100,7 @@ header{
     padding: 10px 0;
 }
 ul{
-    padding: 2px;
+    padding-left: 20px;
 }
 
 .duration h2{
@@ -152,10 +153,14 @@ ul{
 /* MODELS */
 
 #models{
-    padding: 50px 30px;
+    padding: 10px 30px;
     display:block;
     background: #e6fbff;
     justify-content: center;
+    text-align: left;
+}
+
+#models h2{
     text-align: center;
 }
 

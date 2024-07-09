@@ -60,9 +60,9 @@
             </div>
         <div class="models_ML">
             <h2>Models Used</h2>
-            <p><ul>I created two models to predict values of the Real State:</ul>
-            <li>Linear Regression.</li>
-            <li>Randmon Forest.</li></p>
+            <p>I created two models to predict values of the Real State:
+            <ul><li>Linear Regression.</li>
+            <li>Randmon Forest.</li></p></ul>
         </div>
         <div class="duration">
             <h2>Duration</h2>
@@ -142,22 +142,30 @@
     </section>
     <section id="models">
         <div class="title2">
-            <h2>Machine Learning Models to Predict Values</h2>
+            <h2>Machine Learning Models to Predict Values</h2><br>
+            <h4>If you want to see more details of how I get the results below, please visit my GitHub.</h4>
         </div>
         <div class="model">
             <h3>Linear Regression Model</h3>
-            <p>The Linear Regression Model is one of the most used to predict continuos values.<br>
-            Is a good option for the values of the Real State.<br>
-            I divided the data in train (80%) and test (20%) data, and aditionally I invented a database of 13 values
-            to experiment with the model.<br>
-            I get a R2 of 0.72 or 72% and a Mean Squared Error of 34276.</p>
+            <p>The Linear Regression Model is one of the most used to predict continuos values,
+            and is a good option for predict values in the Real State.<br>
+            I divided the data in train (80%) and test (20%). Aditionally I invented a database of 13 records
+            to experiment with the model.<br><br>
+            <h4>I get a R2 of 72%, and a Mean Squared Error of 34276.</h4></p>
         </div>
         <div class="model">
             <h3>Random Forest Regressor Model</h3>
-            <p>The Random Forest Regressor Mode is other option to predict values in the Real State.<br>
-            Also I divided the data in train (80%) and test (20%) data, and I used the same invented a database
-            to experiment with the model.<br>.
-            I get a R2 of 0.80 or 80% and a Mean Squared Error of 23406.</p>
+            <p>The Random Forest Regressor Model is other option to predict values in the Real State.<br>
+            Also I divided the data in train (80%) and test (20%), and I used the same invented database
+            to experiment with the model.<br><br>
+        <h4>I get a R2 of 80%, and a Mean Squared Error of 23406.</h4></p>
+        </div>
+        <div class="bar">
+            <h3>Predicted Values By The Models With 13 News Record</h3>
+            <iframe class="bar1"src="MULTIMEDIA/model_comparision.html" 
+            frameborder="0">
+                </iframe>
+            <p>The values were the result of the prediction of the models, using data that I invent.</p>
         </div>
     </section>
     <section id="Conclusions">
@@ -165,14 +173,17 @@
             <h2>Conclusions</h2><br>
         </div>
         <div>
-            <p>- The averages values of the East and North zones are the most expensive,<br>
-            while the South and the Southwest have the lowest values.<br><br>
-            - Except the Southwest Zone, the mean of Areas of the properties are too similar.<br><br>
-            - The Random Forest Regressor Model has betteer metrics that the Linear Regression Model,
-            a R2 of 0.80 or 80% and a Mean Squared Error of 23406 VS a R2 of 0.72 or 72% and a Mean Squared Error of 34276.<br><br>
-            - As someone that live in the city, I can compare the predicted values for each model, and the Random Forest
-            has more realistic results, So I choose this model to create better prediction abou the price of a property in Bogota.
-        </p>
+            <p>
+            <ul>
+                <li>The averages values of the East and North zones are the most expensive,
+                while the South and the Southwest have the lowest values.</li>
+                <li>Except the Southwest Zone, the mean of Areas of the properties are too similar.</li>
+                <li>The Random Forest Regressor Model has betteer metrics that the Linear Regression Model,
+                a R2 of 80% and a Mean Squared Error of 23406 for the first model, VS a R2 of 72% and a Mean Squared Error of 34276 for the Linear Regression.</li>
+                <li>As someone that live in the city, I can compare the predicted values for each model, and the Random Forest
+                has more realistic results, So I choose this model to create better prediction abou the price of a property in Bogota.</li>
+            </ul>
+            </p>
         </div>
     </section>
     <section id="icons">

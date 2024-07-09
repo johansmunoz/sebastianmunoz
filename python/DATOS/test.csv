@@ -1,14 +1,14 @@
-﻿Rooms;Bathrooms;Area;Zon_Center Zone;Zon_East Zone;Zon_North Zone;Zon_Northwest Zone;Zon_South Zone;Zon_Southwest Zone;Zon_West Zone;Typ_Apartamento;Typ_Bodega;Typ_Casa;Typ_Edificio;Typ_Local;Typ_Lote;Typ_Oficina/Consultorio
-4;2;70;1;0;0;0;0;0;0;1;0;0;0;0;0;0
-5;3;80;0;1;0;0;0;0;0;0;1;0;0;0;0;0
-2;1;50;0;0;1;0;0;0;0;0;0;1;0;0;0;0
-1;2;47;0;0;0;1;0;0;0;0;0;0;1;0;0;0
-3;1;52;0;0;0;0;1;0;0;0;0;0;0;1;0;0
-0;0;62;0;0;0;0;0;1;0;0;0;0;0;0;1;0
-2;3;45;0;0;0;0;0;0;1;0;0;0;0;0;0;1
-5;2;39;0;0;0;0;0;1;0;0;0;0;0;0;1;0
-2;1;52;0;0;0;0;1;0;0;0;0;0;0;1;0;0
-4;3;98;0;0;0;1;0;0;0;0;0;0;1;0;0;0
-4;2;84;0;0;1;0;0;0;0;0;0;1;0;0;0;0
-3;1;26;0;1;0;0;0;0;0;0;1;0;0;0;0;0
-5;3;96;1;0;0;0;0;0;0;1;0;0;0;0;0;0
+﻿Rooms;Bathrooms;Area;Zone of the City;Type of Building
+4;2;70;Zon_Center Zone;Typ_Apartamento
+5;3;80;Zon_East Zone;Typ_Bodega
+2;1;50;Zon_North Zone;Typ_Casa
+1;2;47;Zon_Northwest Zone;Typ_Edificio
+3;1;52;Zon_South Zone;Typ_Local
+0;0;62;Zon_Southwest Zone;Typ_Lote
+2;3;45;Zon_West Zone;Typ_Oficina/Consultorio
+5;2;39;Zon_Southwest Zone;Typ_Lote
+2;1;52;Zon_South Zone;Typ_Local
+4;3;98;Zon_Northwest Zone;Typ_Edificio
+4;2;84;Zon_North Zone;Typ_Casa
+3;1;26;Zon_East Zone;Typ_Bodega
+5;3;96;Zon_Center Zone;Typ_Apartamento
