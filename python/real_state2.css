@@ -99,7 +99,7 @@ header{
     padding: 10px 0;
 }
 ul{
-    padding: 20px;
+    padding: 2px;
 }
 
 .duration h2{
@@ -119,7 +119,7 @@ ul{
 }
 
 #results div{
-    padding: 30px 30px;
+    padding: 10px 10px;
 
 }
 
@@ -147,6 +147,32 @@ ul{
 .bar1{
     width: 100%;
     height: 70vh;
+}
+
+/* MODELS */
+
+#models{
+    padding: 50px 30px;
+    display:block;
+    background: #e6fbff;
+    justify-content: center;
+    text-align: center;
+}
+
+#models div{
+    padding: 10px 10px;
+
+}
+
+#models h3{
+    color: #4d4d54;
+    font-size: 20px;
+    margin: 15px 0px;
+}
+
+#models div p{
+    color:#343439;
+    font-size: 14px;
 }
 
 /* CONCLUSIONS */

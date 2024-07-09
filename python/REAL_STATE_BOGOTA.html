@@ -32,18 +32,21 @@
     <section id="context">
         <div class="goal">
             <H2>GOALS</H2>
-            <p>Found relation between values and locations, sizes, rooms, and so on; of the homes<br>
-            Found general information that could be of interest</p>
+            <ul>
+            <p><li>Found relation between values and locations, sizes, quantity of rooms and bathrooms
+                of the homes, and type of property.</li>
+            <li>Found general information that could be of interest.</li></p>
+            </ul>
             <div class="data">
                 <h2>About Data</h2>
                 <p>Data from 2023.<br>
                 9520 records in the initial data.<br>
-                9 variables.<br>
-                7 zones of the city.<br><br>
+                9 variables.<br><br>
                 </p>
                 <h3>About Variables</h3>
                 <p>
                     <ul>
+                        <li>Type: Apartment, House, Storage, etc.</li>
                         <li>Description: The description of the property that is in sale</li>
                         <li>Value: Price of the property</li>
                         <li>id: Identificator</li>
@@ -54,56 +57,13 @@
                         <li>Area: Space that has the property in square meters</li>
                     </ul>
                 </p>
-                <!-- <table border="1" class="dataframe table table-stripped">
-                    <thead>
-                        <tr style="text-align: right;">
-                        <th>Variable</th>
-                        <th>Description</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                        <th>Type</th>
-                        <td>Kind of property (apartment, house, etc.)</td>
-                        </tr>
-                        <tr>
-                        <th>Description</th>
-                        <td>The description of the property that is in sale</td>
-                        </tr>
-                        <tr>
-                        <th>Value</th>
-                        <td>Price of the property</td>
-                        </tr>
-                        <tr>
-                        <th>id</th>
-                        <td>Identificator</td>
-                        </tr>
-                        <tr>
-                        <th>Neighborhood</th>
-                        <td>District o community in the city</td>
-                        </tr>
-                        <tr>
-                        <th>Localidad</th>
-                        <td>Zone bigger than Neighborhood</td>
-                        </tr>
-                        <tr>
-                        <th>Rooms</th>
-                        <td>The number of Rooms that has the property</td>
-                        </tr>
-                        <tr>
-                        <th>Bathrooms</th>
-                        <td>The number of Barthrooms that has the property</td>
-                        </tr>
-                        <tr>
-                        <th>Area</th>
-                        <td>Space that has the property in square meters</td>
-                        </tr>
-                    </tbody>
-                </table> -->
-                <!-- <iframe class="table1"src="MULTIMEDIA/named_variables.html"  frameborder="0">
-                </iframe> -->
-                </p>
             </div>
+        <div class="models_ML">
+            <h2>Models Used</h2>
+            <p><ul>I created two models to predict values of the Real State:</ul>
+            <li>Linear Regression.</li>
+            <li>Randmon Forest.</li></p>
+        </div>
         <div class="duration">
             <h2>Duration</h2>
             <p>This project took about six months including the develop of the present web page.</p>
@@ -180,6 +140,26 @@
                 <p>The majority of properties in Bogota have 3 or 2 rooms.</p>
             </div>
     </section>
+    <section id="models">
+        <div class="title2">
+            <h2>Machine Learning Models to Predict Values</h2>
+        </div>
+        <div class="model">
+            <h3>Linear Regression Model</h3>
+            <p>The Linear Regression Model is one of the most used to predict continuos values.<br>
+            Is a good option for the values of the Real State.<br>
+            I divided the data in train (80%) and test (20%) data, and aditionally I invented a database of 13 values
+            to experiment with the model.<br>
+            I get a R2 of 0.72 or 72% and a Mean Squared Error of 34276.</p>
+        </div>
+        <div class="model">
+            <h3>Random Forest Regressor Model</h3>
+            <p>The Random Forest Regressor Mode is other option to predict values in the Real State.<br>
+            Also I divided the data in train (80%) and test (20%) data, and I used the same invented a database
+            to experiment with the model.<br>.
+            I get a R2 of 0.80 or 80% and a Mean Squared Error of 23406.</p>
+        </div>
+    </section>
     <section id="Conclusions">
         <div class="title2">
             <h2>Conclusions</h2><br>
@@ -188,6 +168,10 @@
             <p>- The averages values of the East and North zones are the most expensive,<br>
             while the South and the Southwest have the lowest values.<br><br>
             - Except the Southwest Zone, the mean of Areas of the properties are too similar.<br><br>
+            - The Random Forest Regressor Model has betteer metrics that the Linear Regression Model,
+            a R2 of 0.80 or 80% and a Mean Squared Error of 23406 VS a R2 of 0.72 or 72% and a Mean Squared Error of 34276.<br><br>
+            - As someone that live in the city, I can compare the predicted values for each model, and the Random Forest
+            has more realistic results, So I choose this model to create better prediction abou the price of a property in Bogota.
         </p>
         </div>
     </section>
