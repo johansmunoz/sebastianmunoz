@@ -35,6 +35,8 @@ def plot_heatmap(data, title):
 
 # Dash app setup
 app = dash.Dash(__name__)
+server = app.server
+
 app.layout = html.Div([
     html.H1("📊 Monthly Correlation Heatmaps", style={'textAlign': 'center'}),
     
@@ -61,5 +63,6 @@ def update_heatmap(selected_group):
     title = f"📊 Monthly Correlation Heatmap ({selected_group.replace('group', 'Group ')})"
     return plot_heatmap(data, title)
 
+# Run the server locally
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=8080)
