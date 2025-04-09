@@ -11,6 +11,10 @@ df.index = pd.to_datetime(df.index.astype(str))  # Ensure index is datetime
 # Filter data from March 2024 onwards
 df_filtered = df[df.index >= "2024-03"]
 
+#delete the column "Fecha"
+if "Fecha" in df_filtered.columns:
+    df_filtered = df_filtered.drop(columns=["Fecha"])
+
 # Split columns into two groups
 stocks = list(df_filtered.columns)
 midpoint = len(stocks) // 2
@@ -51,7 +55,10 @@ app.layout = html.Div([
         style={"width": "50%", "margin": "auto"}
     ),
     
-    dcc.Graph(id="heatmap")
+    html.Div(
+        dcc.Graph(id="heatmap"),
+        style={"display": "flex", "justifyContent": "center"}
+    )
 ])
 
 @app.callback(
