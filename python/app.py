@@ -74,7 +74,10 @@ def create_bar_chart():
         xaxis=dict(tickformat=".2f"))
     return fig
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 09633328ee56e73854a5e932eff5d16660dd21f9
 # Dash app setup
 app = dash.Dash(__name__)
 server = app.server
