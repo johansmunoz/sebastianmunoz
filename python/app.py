@@ -73,12 +73,22 @@ app.layout = html.Div([
                     clearable=False,
                     style={"width": "100%", "maxWidth": "600px", "margin": "0 auto"}
                 ),
+                html.P(
+                    "This heatmap shows the monthly correlation between each stock and the COLCAP index since March 2024. "
+                    "Red indicates a positive correlation, while blue shows a negative one. Use the dropdown to view different stock groups.",
+                    style={"textAlign": "center", "maxWidth": "900px", "margin": "auto"}
+                ),
                 dcc.Graph(id="heatmap", style={"width": "100%", "maxWidth": "1200px", "margin": "auto"})
             ])
         ]),
 
         dcc.Tab(label="Historical Correlation Bar Chart", children=[
             html.Br(),
+            html.P(
+                "This bar chart displays the historical correlation between each stock and the COLCAP index, calculated using data from 2020 onward. "
+                "A correlation close to 1 means the stock moves in sync with the index, while values closer to -1 indicate opposite movement.",
+                style={"textAlign": "center", "maxWidth": "900px", "margin": "auto"}
+            ),
             dcc.Graph(
                 figure=px.bar(
                     df_corr,
@@ -92,9 +102,12 @@ app.layout = html.Div([
                     labels={"Correlation": "Correlation Coefficient", "Stock": "Stock"}
                 ).update_layout(
                     yaxis=dict(autorange="reversed"),
-                    xaxis=dict(tickformat=".2f"),
-                    height=40 * len(df_corr)  # 🆕 Allocate 40px per stock
+                    height=1000,  # Increased from 800 to 1000
+                    xaxis=dict(tickformat=".2f")
                 ),
+                style={"margin": "0 auto", "width": "90%", "height": "1000px"}  # Add fixed height here
+            ),
+
                 style={"margin": "0 auto", "width": "100%", "maxWidth": "1200px"}
             ),
 
@@ -140,6 +153,11 @@ app.layout = html.Div([
 
         dcc.Tab(label="Rolling Correlation with COLCAP", children=[
             html.Br(),
+            html.P(
+                "This section shows the rolling correlation between each stock and the COLCAP index over different time windows (e.g., 252 days ≈ 1 year). "
+                "Rolling correlation helps track how relationships evolve over time.",
+                style={"textAlign": "center", "maxWidth": "900px", "margin": "auto"}
+            ),
             dcc.Dropdown(
                 id="window_selector",
                 options=[{"label": label, "value": label} for label in rolling_df.columns],
