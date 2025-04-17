@@ -108,8 +108,6 @@ app.layout = html.Div([
                 style={"margin": "0 auto", "width": "90%", "height": "1000px"}  # Add fixed height here
             ),
 
-                style={"margin": "0 auto", "width": "100%", "maxWidth": "1200px"}
-            ),
 
             html.H3("Correlation Table", style={"textAlign": "center"}),
             html.Div([
