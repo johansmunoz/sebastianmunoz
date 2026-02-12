@@ -1,0 +1,141 @@
+/* General layout */
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f5f7fa;
+  color: #1a1a1a;
+}
+
+.company-main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 16px 40px;
+}
+
+/* Header */
+
+.company-header h1 {
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.company-subtitle {
+  text-align: center;
+  color: #555;
+  margin-bottom: 32px;
+  font-size: 14px;
+}
+
+/* Section titles */
+
+.company-kpis h2,
+.company-table h2,
+.company-conclusion h2 {
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+/* KPI grid */
+
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.kpi-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 12px 14px;
+  border: 1px solid #e1e5eb;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+}
+
+.kpi-label {
+  display: block;
+  font-size: 12px;
+  color: #777;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.kpi-value {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Financial table */
+
+.company-table {
+  margin-top: 8px;
+}
+
+.company-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #e1e5eb;
+  font-size: 14px;
+}
+
+.company-table th,
+.company-table td {
+  padding: 10px 12px;
+  text-align: left;
+}
+
+.company-table thead {
+  background: #f0f3fa;
+}
+
+.company-table thead th {
+  font-weight: 600;
+}
+
+.company-table tbody tr:nth-child(even) {
+  background: #f8f9fc;
+}
+
+/* Conclusions */
+
+.company-conclusion {
+  margin-top: 24px;
+}
+
+.company-conclusion p {
+  margin-top: 4px;
+  line-height: 1.5;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Back link */
+
+.company-back {
+  margin-top: 28px;
+  text-align: center;
+}
+
+.back-link {
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid #2a6df4;
+  color: #2a6df4;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  background: #ffffff;
+  display: inline-block;
+}
+
+.back-link:hover {
+  background: #2a6df4;
+  color: #ffffff;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.12);
+}
