@@ -1,0 +1,58 @@
+#context h2, #results h2 {
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+#context h3 {
+  margin-top: 30px;
+  color: #003366;
+}
+
+.company-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.company-card {
+  display: block;
+  padding: 12px 18px;
+  background: white;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #003366;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.company-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  background: #f0f4ff;
+}
+
+.content-icons {
+  margin-top: 40px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+/*IDIOMA*/
+.lang-switch {
+  text-align: right;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+}
+
+.lang-switch a {
+  color: #003366;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.lang-switch a:hover {
+  text-decoration: underline;
+}

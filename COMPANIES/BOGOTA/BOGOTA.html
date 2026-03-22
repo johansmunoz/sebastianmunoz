@@ -6,11 +6,98 @@
   <link rel="stylesheet" href="BOGOTA.css">
 </head>
 <body>
+
+<header class="top-header">
+
+  <!-- Columna izquierda: menú -->
+  <nav class="header-left">
+  <div class="dropdown">
+    <button class="dropdown-btn">Empresas ▾</button>
+
+    <div class="dropdown-content">
+
+      <!-- FINANCIERO -->
+      <div class="dropdown-group">
+        <div class="dropdown-title">Financiero</div>
+        <a href="../BOGOTA/BOGOTA.html">Banco de Bogotá</a>
+        <a href="../BANCOLOMBIA/BANCOLOMBIA.html">Bancolombia</a>
+        <a href="../DAVIVIENDA/DAVIVIENDA.html">Davivienda</a>
+        <a href="../AVAL/AVAL.html">Grupo Aval</a>
+      </div>
+
+      <!-- PETRÓLEO Y GAS -->
+      <div class="dropdown-group">
+        <div class="dropdown-title">Petróleo y Gas</div>
+        <a href="#">Ecopetrol</a>
+        <a href="#">Canacol Energy</a>
+      </div>
+
+      <!-- ENERGÍA -->
+      <div class="dropdown-group">
+        <div class="dropdown-title">Energía</div>
+        <a href="#">ISA</a>
+        <a href="#">Celsia</a>
+      </div>
+
+      <!-- HOLDINGS -->
+      <div class="dropdown-group">
+        <div class="dropdown-title">Holdings</div>
+        <a href="#">Grupo Argos</a>
+        <a href="#">Grupo Sura</a>
+      </div>
+
+      <!-- INMOBILIARIO -->
+      <div class="dropdown-group">
+        <div class="dropdown-title">Inmobiliario</div>
+        <a href="#">PEI</a>
+        <a href="#">Tin</a>
+      </div>
+
+      <!-- INFRAESTRUCTURA Y CONSTRUCCIÓN -->
+      <div class="dropdown-group">
+        <div class="dropdown-title">Infraestructura y Construcción</div>
+        <a href="#">Cementos Argos</a>
+        <a href="#">Conconcreto</a>
+      </div>
+
+      <!-- CONSUMO -->
+      <div class="dropdown-group">
+        <div class="dropdown-title">Consumo</div>
+        <a href="#">Nutresa</a>
+        <a href="#">Éxito</a>
+      </div>
+
+      <!-- MINERÍA -->
+      <div class="dropdown-group">
+        <div class="dropdown-title">Minería</div>
+        <a href="#">Mineros S.A.</a>
+      </div>
+
+      <!-- INDUSTRIAL -->
+      <div class="dropdown-group">
+        <div class="dropdown-title">Industrial</div>
+        <a href="#">Enka</a>
+      </div>
+
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Columna central: logo + título -->
+ <div class="header-center"> 
+  <span id="bank-title"></span> 
+  <img id="bank-logo" src="../assets/bancodebogota-logo.png" alt="Bank Logo">
+ </div>
+
+</header>
+
   <main class="company-main">
     
     <!-- Header -->
     <section class="company-header">
-      <h1>Banco de Bogotá</h1>
+      <h1 id="company-name"></h1>
+
       <p class="company-subtitle">
         Summary of key financial indicators and quarterly performance.
       </p>
@@ -19,48 +106,7 @@
     <!-- KPIs -->
     <section class="company-kpis">
       <h2>Key Performance Indicators</h2>
-
-      <div class="kpi-grid">
-        <div class="kpi-card">
-          <span class="kpi-label">Net Income</span>
-          <span class="kpi-value">COP X.X Bn</span>
-        </div>
-
-        <div class="kpi-card">
-          <span class="kpi-label">ROE</span>
-          <span class="kpi-value">X.X %</span>
-        </div>
-
-        <div class="kpi-card">
-          <span class="kpi-label">ROA</span>
-          <span class="kpi-value">X.X %</span>
-        </div>
-
-        <div class="kpi-card">
-          <span class="kpi-label">Solvency Ratio</span>
-          <span class="kpi-value">X.X %</span>
-        </div>
-
-        <div class="kpi-card">
-          <span class="kpi-label">Gross Loan Portfolio</span>
-          <span class="kpi-value">COP X.X Tn</span>
-        </div>
-
-        <div class="kpi-card">
-          <span class="kpi-label">Past-Due Loans (NPL)</span>
-          <span class="kpi-value">X.X %</span>
-        </div>
-
-        <div class="kpi-card">
-          <span class="kpi-label">Deposits</span>
-          <span class="kpi-value">COP X.X Tn</span>
-        </div>
-
-        <div class="kpi-card">
-          <span class="kpi-label">Net Interest Margin (NIM)</span>
-          <span class="kpi-value">X.X %</span>
-        </div>
-      </div>
+      <div id="kpi-container" class="kpi-grid"></div>
     </section>
 
     <!-- Financial Table -->
@@ -68,42 +114,15 @@
       <h2>Main Financial Results</h2>
 
       <table>
-        <thead>
-          <tr>
-            <th>Metric</th>
-            <th>Q1 2024</th>
-            <th>Q4 2023</th>
-            <th>Q1 2023</th>
-          </tr>
-        </thead>
+        <thead id="quarters-head"></thead> 
+        <tbody id="quarters-body"></tbody>
+      </table>
+    </section>
+  </main>
 
-        <tbody>
-          <tr>
-            <td>Net Income</td>
-            <td>COP X.X Bn</td>
-            <td>COP X.X Bn</td>
-            <td>COP X.X Bn</td>
-          </tr>
-
-          <tr>
-            <td>Gross Loan Portfolio</td>
-            <td>COP X.X Tn</td>
-            <td>COP X.X Tn</td>
-            <td>COP X.X Tn</td>
-          </tr>
-
-          <tr>
-            <td>Deposits</td>
-            <td>COP X.X Tn</td>
-            <td>COP X.X Tn</td>
-            <td>COP X.X Tn</td>
-          </tr>
-
-          <tr>
-            <td>Solvency Ratio</td>
-            <td>X.X %</td>
-            <td>X.X %</td>
-            <td>X.X %</td>
-          </tr>
-
-          <tr>
+  <script src="../js/loadBank.js"></script>
+  <script>
+    loadBankData("../data/banco-de-bogota.json");
+  </script>
+  </body>
+  </html>

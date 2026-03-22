@@ -1,0 +1,14 @@
+{
+    "Financiero": [
+        {
+            "name": "Banco de Bogota",
+            "slug": "banco-de-bogota",
+            "logo": "bancodebogota-logo.png"
+        },
+        {
+            "name": "Banco Davivienda SA",
+            "slug": "banco-davivienda-sa",
+            "logo": "davivienda-logo.png"
+        }
+    ]
+}
