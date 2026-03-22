@@ -64,7 +64,7 @@ function renderCompanyHeader(company) {
 
   // Logo dinámico
   if (company.logo) {
-    document.getElementById("company-logo").src = `/sebastianmunoz/COMPANIES/assets/${company.logo}`;
+    document.getElementById("company-logo").src = `/COMPANIES/assets/${company.logo}`;
   }
 }
 
