@@ -3,7 +3,7 @@
 ============================================================ */
 async function loadMenu() {
   try {
-    const response = await fetch("data/menu.json");
+    const response = await fetch("COMPANIES/data/menu.json");
     if (!response.ok) {
       throw new Error("No se pudo cargar menu.json");
     }
@@ -40,7 +40,7 @@ function buildMenu(menuData) {
       const link = document.createElement("a");
 
       // Enlace universal
-      link.href = `index.html?company=${company.slug}`;
+      link.href = `COMPANIES/index.html?company=${company.slug}`;
 
       link.textContent = company.name;
       groupDiv.appendChild(link);
