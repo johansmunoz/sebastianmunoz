@@ -34,7 +34,7 @@ function getCompanyFromURL() {
 ============================================================ */
 async function loadCompanyData(companySlug) {
   try {
-    const jsonPath = `COMPANIES/data/${companySlug}.json`;
+    const jsonPath = `/sebastianmunoz/COMPANIES/data/${companySlug}.json`;
     const response = await fetch(jsonPath);
 
     if (!response.ok) {
@@ -64,7 +64,7 @@ function renderCompanyHeader(company) {
 
   // Logo dinámico
   if (company.logo) {
-    document.getElementById("company-logo").src = `COMPANIES/assets/${company.logo}`;
+    document.getElementById("company-logo").src = `/sebastianmunoz/COMPANIES/assets/${company.logo}`;
   }
 }
 
